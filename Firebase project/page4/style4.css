@@ -1,0 +1,23 @@
+#front h3 {
+    color: #61B846;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 25px;
+    padding: 25px;
+    /* 108.696% */
+}
+
+#fronth6 {
+    color: #024F9D;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    margin: 25px;
+    padding: 25px;
+    /* 208.333% */
+}

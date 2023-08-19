@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up <form action=""></form>
+    </title>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="front">
+        <h2 id="saylani">SAYLANI WELFARE</h2>
+        <h4 id="market">ONLINE DISCOUNT STORE</h4>
+        <h2>Contact Form</h2>
+
+        <div class="container">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="Contact">Contact</label>
+                <input type="number" id="Contact" contact="contact" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button id="signup">Sign-up</button>
+
+                    </div>
+            </form>
+        </div>
+         <a href="../page3/index3.html">
+        <div="lower_text">Already have an account?Login</div></a>
+    </div>
+</body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAAK_gxgjZ47YS4VhY__8emAxx9IX-ZDnM",
+        authDomain: "my-first-firebase-projec-22d47.firebaseapp.com",
+        databaseURL: "https://my-first-firebase-projec-22d47-default-rtdb.firebaseio.com",
+        projectId: "my-first-firebase-projec-22d47",
+        storageBucket: "my-first-firebase-projec-22d47.appspot.com",
+        messagingSenderId: "540311308065",
+        appId: "1:540311308065:web:45824e6815d5a2899d6060"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth(app);
+
+
+    signup.addEventListener('click',(e)  => {
+        var email=document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var username=document.getElementById('name').value;
+       
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+    // ..
+  });
+
+
+    })
+</script>
+
+</html>
+
+
