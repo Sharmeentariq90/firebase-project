@@ -1,0 +1,90 @@
+#saylani {
+    padding-top: 75px;
+}
+
+#market {
+    padding-top: 25 px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    background: url('User\ name\ icon.png') no-repeat 10px 50%;
+    padding-left: 40px;
+}
+
+input[type="number"] {
+    background: url('./Frame\ \(2\).png') no-repeat 10px 50%;
+    padding-left: 40px;
+}
+
+input[type="email"] {
+    background: url('Email\ icon.png') no-repeat 10px 50%;
+    padding-left: 40px;
+}
+
+input[type="password"] {
+    background: url('Password\ icon.png') no-repeat 10px 50%;
+    padding-left: 40px;
+}
+
+#signup {
+    width: 226px;
+    height: 69px;
+    border-radius: 15px;
+    background: #61B846;
+    box-shadow: 0px 4px 4px 5px #D4D3D3;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    padding-top: 5px;
+    padding-left: 0.5px
+}
+
+#button {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+#lower_text{
+    text-align: center;
+    color: #0cd827;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 2px; /* 166.667% */
+}
